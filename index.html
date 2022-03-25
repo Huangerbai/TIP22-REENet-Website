@@ -37,46 +37,52 @@
       </div>
 
       <div class="site-inner" style="padding-top: 50px;">
-        <h3 class="heading h-03">Method</h3>
+        <h3 class="heading h-03">Benchmark</h3>
         <div align="center" style="padding-top:20px;padding-bottom:10px">
-          <img src="motivation.jpg" width=90%> <br>
+          <img src="benchmark.jpg" width=90%> <br>
         </div>
 
-        <p class='copy-02'>Motivation: comparison of different adaptive low light detection techniques. L: low light data. H: normal light data. Existing enhancement-based, darkening-based, and feature adaptation methods either ignore the high-level gap, or have limited effects due to the huge and complex gap between L and H. Our method instead considers both low-level and high-level adaptation, therefore achieves better performance.
+        <p class='copy-02'>Factorized Enhancement Model (FEM): comparison of different ways to utilize RAW data for low light enhancement. FEM decomposes the properties of RAW images into measurable factors and provides a tool for exploring how properties of RAW images affect the enhancement performance empirically. 
         </p>
 
         <br><br>
 
         <div align="center" style="padding-top:20px;padding-bottom:10px">
-          <img src="framework_2.jpg" width=70%> <br>
+          <img src="bench_result.jpg" width=70%> <br>
         </div>
 
-        <p class='copy-02'>Framework: <a style="color:#4C6E8B"><b>LOW-LEVEL</b></a> adaptation fills the gap by creating intermediate states. We bidirectionally brighten the low light data as well as distort the normal light data with noise and color bias. Based on the built intermediate states, we use multi-task cross-domain self-supervised learning to fill the <a style="color:#85937E"><b>HIGH-LEVEL</b></a> gap.
+        <p class='copy-02'>RAW Benchmarking: evaluation of sRGB/RAW based methods on SID dataset[1]. We provide subjective and objective comparison results using PSNR, SSIM, VIF[2], NIQE[3] and LPIPS[4].
         </p>
       </div>
 
       <div class="site-inner" style="padding-top: 50px;">
-        <h3 class="heading h-03">Selected Experimental Results</h3>
+        <h3 class="heading h-03">REENet</h3>
 
         <div align="center" style="padding-top:20px;padding-bottom:10px">
-          <img src="comp_map.jpg" width=60%> <br>
+          <img src="REENet.jpg" width=60%> <br>
         </div>
 
         <div align="center">
-          <p class='copy-02'>Precision-Recall (PR) curves on DARK FACE.
+          <p class='copy-02'>RAW-guiding Exposure Enhancement Network (REENet): REENet makes full use of low/normal light RAW images in the training. Functionally, the three parts of the REENet perform unprocessing, enhancement and processing, respectively.
           </p>
         </div>
 
         <br><br>
 
         <div align="center" style="padding-top:20px;padding-bottom:10px">
-          <img src="enh_comp.jpg" width=90%> <br>
+          <img src="comp1.jpg" width=90%> <br>
         </div>
 
+        <p class='copy-02'>Quantitative and qualitative comparison with traditional low light enhancement methods.
+          
+        <div align="center" style="padding-top:20px;padding-bottom:10px">
+          <img src="comp2_1.jpg" width=90%> <br>
+          <img src="comp2_2.jpg" width=90%> <br>
+        </div>
 
-
-        <p class='copy-02'>Qualitative comparison of different enhancement-based methods. (a) Input low light image and the ground truth boxes. (b)-(g) Results of low-light enhancement methods with DSFD [1]. (h) Our result.
-        </p>
+        <p class='copy-02'>Quantitative and qualitative comparison with learning-based low light enhancement methods.
+          
+          
 
       </div>
 
