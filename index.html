@@ -35,14 +35,7 @@
         <h3 class="heading h-03">Abstract</h3>
         <div class="columns">
           <aside>
-            <p class="copy-02">Face detection in low light scenarios is challenging but vital to many practical applications, e.g., surveillance video, autonomous driving at night. Most existing face detectors heavily rely on extensive annotations, while collecting data is time-consuming and laborious. To reduce the burden of building new datasets for low light conditions, we make full use of existing normal light data and explore how to adapt face detectors from normal light to low light. The challenge of this task is that the gap between normal and low light is too huge and complex for both pixel-level and object-level. Therefore, most existing low-light enhancement and adaptation methods do not achieve desirable performance. To address the issue, we propose a joint High-Low Adaptation (HLA) framework. Through a bidirectional low-level adaptation and multi-task high-level adaptation scheme, our HLA-Face outperforms state-of-the-art methods even without using dark face labels for training.</p>
-          </aside>
-          <aside>
-            <div align="center" style="padding-bottom:10px">
-              <img src="teasor.jpg" width=100%> <br>
-            </div>
-            <p class='copy-02' style="color:#888888">Dark face detection visual results and our learning paradigm. Compared with the result of DSFD [1] on original low light images and the enhanced version by LIME [2], our method can better recognize the faces in dark scenarios.
-            </p>
+            <p class="copy-02">In this paper, we make the first benchmark effort to elaborate on the superiority of using RAW images in the low light enhancement and develop a novel alternative route to utilize RAW images in a more flexible and practical way. Inspired by a full consideration on the typical image processing pipeline, we are inspired to develop a new evaluation framework, Factorized Enhancement Model (FEM), which decomposes the properties of RAW images into measurable factors and provides a tool for exploring how properties of RAW images affect the enhancement performance empirically. The empirical benchmark results show that the Linearity of data and Exposure Time recorded in meta-data play the most critical role, which brings distinct performance gains in various measures over the approaches taking the sRGB images as input. With the insights obtained from the benchmark results in mind, a RAW-guiding Exposure Enhancement Network (REENet) is developed, which makes trade-offs between the advantages and inaccessibility of RAW images in real applications in a way of using RAW images only in the training phase. REENet projects sRGB images into linear RAW domains to apply constraints with corresponding RAW images to reduce the difficulty of modeling training. After that, in the testing phase, our REENet does not rely on RAW images. Experimental results demonstrate not only the superiority of REENet to state-of-the-art sRGB-based methods and but also the effectiveness of the RAW guidance and all components.</p>
           </aside>
         </div>
       </div>
